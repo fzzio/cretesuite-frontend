@@ -20,13 +20,15 @@ const CardInner = styled.div`
 `
 
 type CardProps = {
-  image: any
+  image: any;
+  onCardClick: () => void;
+  flipped: boolean;
 }
 
 export const Card = (props: CardProps) => {
-  const [ flipped, setFlipped ] = useState(false)
+  const { image, onCardClick, flipped } = props;
 
-  return <CardWrap onClick={() => setFlipped(!flipped)}>
+  return <CardWrap onClick={onCardClick}>
     <AspectRatioBox>
       <CardInner>
         { flipped && <img src={props.image.url} /> }
