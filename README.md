@@ -1,5 +1,5 @@
-# CreteSuite take home ui assessment
-This is a take home assessment for the interview process at CreteSuite.
+# Home ui assessment
+This is a take home assessment.
 
 ### Overview
 A classic matching game, written in React + Typescript.
